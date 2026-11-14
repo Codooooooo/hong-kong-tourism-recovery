@@ -1,0 +1,45 @@
+{
+  "created_utc": "2026-09-19T09:43:01.627421+00:00",
+  "project_title": "From Collapse to Recovery: Hong Kong Tourism and Hotel Performance, 2019-2025",
+  "sources": [
+    {
+      "file": "visitor_arrivals_by_region_original_en.json",
+      "dataset": "Visitor arrivals by nationality/region",
+      "dataset_page": "https://data.gov.hk/en-data/dataset/hk-censtatd-tablechart-650-80001",
+      "download_url": "https://www.censtatd.gov.hk/api/get.php?id=650-80001&lang=en&full_series=1",
+      "sha256": "bc48938733a7e49382f9b7bfd0c706f02e60d5deeb900e8b4937a6ff1fe18459"
+    },
+    {
+      "file": "hotel_room_occupancy_rate_monthly_original_en.csv",
+      "dataset": "Hotel room occupancy rate",
+      "dataset_page": "https://data.gov.hk/en-data/dataset/hk-cstb-cstb_tc-tc-hotel-room-occupancy-rate",
+      "download_url": "https://www.tourism.gov.hk/datagovhk/hotelroomoccupancy/hotel_room_occupancy_rate_monthly_en.csv",
+      "sha256": "516cd4831a2955b14881cdd61656eb2a5e1dad06e70c2215c73795f7d45fcd4e"
+    },
+    {
+      "file": "average_achieved_hotel_room_rate_original_en.csv",
+      "dataset": "Average achieved hotel room rate in Hong Kong",
+      "dataset_page": "https://data.gov.hk/en-data/dataset/hk-cstb-cstb_tc-tc-average-achieved-hotel-room-rate",
+      "download_url": "https://www.tourism.gov.hk/datagovhk/hotelroomrate/average_achieved_hotel_room_rate_en.csv",
+      "sha256": "03cbefcd2ec4b2dde9a5fcae29011f0292eb29045c4667519be8f34e9fd59297"
+    }
+  ],
+  "outputs": {
+    "tourism_hotel_monthly_2022_2025.csv": 48,
+    "visitor_arrivals_monthly_2019_2025.csv": 84,
+    "tourism_annual_summary_2019_2025.csv": 7
+  },
+  "quality_checks": {
+    "common_months_2022_2025": 48,
+    "monthly_join_key_unique": true,
+    "missing_required_values": 0,
+    "negative_required_values": 0,
+    "occupancy_outside_0_100": 0,
+    "official_values_modified": false
+  },
+  "caveats": [
+    "Visitor market classification changed from country/region of residence to nationality/region on 16 October 2024. Long-term analysis therefore uses Total arrivals rather than regional shares.",
+    "The 2022-2025 merged monthly table supports descriptive association, not causal claims.",
+    "Annual hotel occupancy and room-rate values are arithmetic means of the 12 published monthly observations."
+  ]
+}

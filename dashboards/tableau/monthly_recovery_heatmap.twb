@@ -1,0 +1,385 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20262.26.0915.0020                               -->
+<workbook _.fcp.WorkbookFingerprinting.true...author-id='1dbf24a96ebbd039bc7d0aff6418418badb26c740ed5ea3175b0d4fe0628eaea' _.fcp.WorkbookFingerprinting.true...creator-author-id='31bb3807bb697dd681d913538cbded13aad1ad8461a6b6a2b8b35b86d952dc83' _.fcp.WorkbookFingerprinting.true...creator-license-type='public' _.fcp.WorkbookFingerprinting.true...creator-machine-id='31bb3807bb697dd681d913538cbded13aad1ad8461a6b6a2b8b35b86d952dc83' _.fcp.WorkbookFingerprinting.true...license-type='public' _.fcp.WorkbookFingerprinting.true...machine-id='31bb3807bb697dd681d913538cbded13aad1ad8461a6b6a2b8b35b86d952dc83' locale='en_US' original-version='18.1' source-build='2026.2.2 (20262.26.0819.2015)' source-platform='win' version='18.1' xml:base='https://localhost:8080' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <_.fcp.WorkbookFingerprinting.true...WorkbookFingerprinting />
+  </document-format-change-manifest>
+  <repository-location derived-from='https://public.tableau.com/workbooks/Chart3_ChusongXu?rev=1.0' id='Chart3_ChusongXu' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='visitor_arrivals_monthly_2019_2025' inline='true' name='federated.05kesg813lnz4m10fn8d91yukwa9' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='visitor_arrivals_monthly_2019_2025' name='textscan.154wn4e14e889u12rstf208v1jgq'>
+            <connection class='textscan' directory='../../data/cleaned' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.154wn4e14e889u12rstf208v1jgq' name='visitor_arrivals_monthly_2019_2025.csv' table='[visitor_arrivals_monthly_2019_2025#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='zh_Hans_HK' separator=','>
+            <column datatype='date' name='Date' ordinal='0' />
+            <column datatype='integer' name='Year' ordinal='1' />
+            <column datatype='integer' name='MonthNumber' ordinal='2' />
+            <column datatype='string' name='MonthName' ordinal='3' />
+            <column datatype='integer' name='YearMonth' ordinal='4' />
+            <column datatype='integer' name='VisitorArrivals' ordinal='5' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[visitor_arrivals_monthly_2019_2025.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;zh_Hans_CN&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;HK$&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;zh_Hans_HK&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[visitor_arrivals_monthly_2019_2025.csv]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[visitor_arrivals_monthly_2019_2025.csv_02FEDA05EF184288A036B3A03AAD8D78]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[visitor_arrivals_monthly_2019_2025.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[visitor_arrivals_monthly_2019_2025.csv_02FEDA05EF184288A036B3A03AAD8D78]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MonthNumber</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MonthNumber]</local-name>
+            <parent-name>[visitor_arrivals_monthly_2019_2025.csv]</parent-name>
+            <remote-alias>MonthNumber</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[visitor_arrivals_monthly_2019_2025.csv_02FEDA05EF184288A036B3A03AAD8D78]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MonthName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[MonthName]</local-name>
+            <parent-name>[visitor_arrivals_monthly_2019_2025.csv]</parent-name>
+            <remote-alias>MonthName</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LZH_RCN' />
+            <object-id>[visitor_arrivals_monthly_2019_2025.csv_02FEDA05EF184288A036B3A03AAD8D78]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>YearMonth</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[YearMonth]</local-name>
+            <parent-name>[visitor_arrivals_monthly_2019_2025.csv]</parent-name>
+            <remote-alias>YearMonth</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[visitor_arrivals_monthly_2019_2025.csv_02FEDA05EF184288A036B3A03AAD8D78]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>VisitorArrivals</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[VisitorArrivals]</local-name>
+            <parent-name>[visitor_arrivals_monthly_2019_2025.csv]</parent-name>
+            <remote-alias>VisitorArrivals</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[visitor_arrivals_monthly_2019_2025.csv_02FEDA05EF184288A036B3A03AAD8D78]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Month Name' datatype='string' name='[MonthName]' role='dimension' type='nominal' />
+      <column caption='Month Number' datatype='integer' name='[MonthNumber]' role='dimension' type='quantitative' />
+      <column caption='Visitor Arrivals' datatype='integer' default-format='*0' name='[VisitorArrivals]' role='measure' type='quantitative' />
+      <column caption='Year Month' datatype='integer' name='[YearMonth]' role='dimension' type='quantitative' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <column caption='visitor_arrivals_monthly_2019_2025.csv' datatype='table' name='[__tableau_internal_object_id__].[visitor_arrivals_monthly_2019_2025.csv_02FEDA05EF184288A036B3A03AAD8D78]' role='measure' type='quantitative' />
+      <extract count='-1' enabled='true' object-id='' units='records' user-specific='false'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='Data/TableauTemp/#TableauTemp_05v61d414unk2i18uh4le1r98tal.hyper' default-settings='yes' schema='Extract' sslmode='' update-time='09/19/2026 12:04:45 PM'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='visitor_arrivals_monthly_2019_2025' increment-value='%null%' refresh-type='create' rows-inserted='84' timestamp-start='2026-09-19 12:04:44.455' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Date</remote-alias>
+              <ordinal>0</ordinal>
+              <family>visitor_arrivals_monthly_2019_2025.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>84</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[visitor_arrivals_monthly_2019_2025.csv_02FEDA05EF184288A036B3A03AAD8D78]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Year</remote-alias>
+              <ordinal>1</ordinal>
+              <family>visitor_arrivals_monthly_2019_2025.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[visitor_arrivals_monthly_2019_2025.csv_02FEDA05EF184288A036B3A03AAD8D78]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MonthNumber</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[MonthNumber]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MonthNumber</remote-alias>
+              <ordinal>2</ordinal>
+              <family>visitor_arrivals_monthly_2019_2025.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[visitor_arrivals_monthly_2019_2025.csv_02FEDA05EF184288A036B3A03AAD8D78]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MonthName</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[MonthName]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MonthName</remote-alias>
+              <ordinal>3</ordinal>
+              <family>visitor_arrivals_monthly_2019_2025.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LZH_RCN' />
+              <object-id>[visitor_arrivals_monthly_2019_2025.csv_02FEDA05EF184288A036B3A03AAD8D78]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>YearMonth</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[YearMonth]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>YearMonth</remote-alias>
+              <ordinal>4</ordinal>
+              <family>visitor_arrivals_monthly_2019_2025.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>84</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[visitor_arrivals_monthly_2019_2025.csv_02FEDA05EF184288A036B3A03AAD8D78]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>VisitorArrivals</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[VisitorArrivals]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>VisitorArrivals</remote-alias>
+              <ordinal>5</ordinal>
+              <family>visitor_arrivals_monthly_2019_2025.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>84</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[visitor_arrivals_monthly_2019_2025.csv_02FEDA05EF184288A036B3A03AAD8D78]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;China&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='visitor_arrivals_monthly_2019_2025.csv' id='visitor_arrivals_monthly_2019_2025.csv_02FEDA05EF184288A036B3A03AAD8D78'>
+            <properties context=''>
+              <relation connection='textscan.154wn4e14e889u12rstf208v1jgq' name='visitor_arrivals_monthly_2019_2025.csv' table='[visitor_arrivals_monthly_2019_2025#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='zh_Hans_HK' separator=','>
+                  <column datatype='date' name='Date' ordinal='0' />
+                  <column datatype='integer' name='Year' ordinal='1' />
+                  <column datatype='integer' name='MonthNumber' ordinal='2' />
+                  <column datatype='string' name='MonthName' ordinal='3' />
+                  <column datatype='integer' name='YearMonth' ordinal='4' />
+                  <column datatype='integer' name='VisitorArrivals' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <repository-location derived-from='https://public.tableau.com/workbooks/Chart3_ChusongXu/Sheet1?rev=' id='133750682' path='/workbooks/Chart3_ChusongXu' revision='' />
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#000000' fontname='Segoe UI' fontsize='14'>Hong Kong Visitor Arrivals Rebounded Across Every Month by 2025</run>
+            <run fontalignment='1'>Æ&#10;</run>
+            <run fontalignment='1' fontcolor='#666666' fontname='Segoe UI' fontsize='12'>Monthly visitor arrivals, January 2019–December 2025</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='visitor_arrivals_monthly_2019_2025' name='federated.05kesg813lnz4m10fn8d91yukwa9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.05kesg813lnz4m10fn8d91yukwa9'>
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column caption='Visitor Arrivals' datatype='integer' default-format='*0' name='[VisitorArrivals]' role='measure' type='quantitative' />
+            <column-instance column='[Date]' derivation='Month' name='[mn:Date:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[VisitorArrivals]' derivation='Sum' name='[sum:VisitorArrivals:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.05kesg813lnz4m10fn8d91yukwa9].[sum:VisitorArrivals:qk]' included-values='in-range' />
+          <slices>
+            <column>[federated.05kesg813lnz4m10fn8d91yukwa9].[sum:VisitorArrivals:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='font-family' field='[federated.05kesg813lnz4m10fn8d91yukwa9].[yr:Date:ok]' value='Segoe UI' />
+            <format attr='font-size' field='[federated.05kesg813lnz4m10fn8d91yukwa9].[yr:Date:ok]' value='12' />
+            <format attr='font-family' field='[federated.05kesg813lnz4m10fn8d91yukwa9].[mn:Date:ok]' value='Segoe UI' />
+            <format attr='font-size' field='[federated.05kesg813lnz4m10fn8d91yukwa9].[mn:Date:ok]' value='12' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.05kesg813lnz4m10fn8d91yukwa9].[sum:VisitorArrivals:qk]' min='0' palette='blue_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.05kesg813lnz4m10fn8d91yukwa9].[sum:VisitorArrivals:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run>&lt;</run>
+                <run>[federated.05kesg813lnz4m10fn8d91yukwa9].[mn:Date:ok]</run>
+                <run>&gt; &lt;</run>
+                <run>[federated.05kesg813lnz4m10fn8d91yukwa9].[yr:Date:ok]</run>
+                <run>&gt;&#10;Visitor arrivals: &lt;</run>
+                <run>[federated.05kesg813lnz4m10fn8d91yukwa9].[sum:VisitorArrivals:qk]</run>
+                <run>&gt;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='2.3756906986236572' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#ffffff' />
+                <format attr='mark-transparency' value='255' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.05kesg813lnz4m10fn8d91yukwa9].[yr:Date:ok]</rows>
+        <cols>[federated.05kesg813lnz4m10fn8d91yukwa9].[mn:Date:ok]</cols>
+      </table>
+      <simple-id uuid='{7FB6425B-96AA-4D6C-80D4-C4ACB04E1A01}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='44'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.05kesg813lnz4m10fn8d91yukwa9].[sum:VisitorArrivals:qk]' show-domain='false' show-null-ctrls='false' type='filter' />
+            <card pane-specification-id='0' param='[federated.05kesg813lnz4m10fn8d91yukwa9].[sum:VisitorArrivals:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.05kesg813lnz4m10fn8d91yukwa9].[yr:Date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{5D2A8CED-6260-4C7A-82DE-3AC25B74B0BB}' />
+    </window>
+  </windows>
+</workbook>
